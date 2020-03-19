@@ -3,7 +3,7 @@
 This script can be used to:
  - Extract user tweets
  - Search for tweets by keyword
- - Search for tweets in a certain country(using country codes)
+ - Search for tweets in a certain country(using country codes)  
 (*Adjust the function calls to suit your need*)
 
 ## Authentication
