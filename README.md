@@ -8,7 +8,7 @@ This script can be used to:
 
 ## Authentication
 
-To be able to successfully run the script, you'll need authenticatation from Twitter.  
+To be able to successfully run the script, you'll need authentication from Twitter.  
 See the guide to get authentication credentials [here.](https://www.geeksforgeeks.org/extraction-of-tweets-using-tweepy/)
 
 Used is the Twitter API **tweepy** ,here is it's [documentation.](http://docs.tweepy.org/en/latest/index.html)
