@@ -24,8 +24,8 @@ def get_tweets(username):
     # verified?(tweets.verified), description(tweets.description)
     # retweet count(tweets.retweet_count), likes(tweets.favorite_count)
 
-    tweets_for_csv = [tweet.text for tweet in tweets]  # CSV file created
-    for j in tweets_for_csv:
+    tweets_text = [tweet.text for tweet in tweets]  # CSV file created
+    for j in tweets_text:
         # Appending tweets to the empty array tmp
         tmp.append(j)
 
