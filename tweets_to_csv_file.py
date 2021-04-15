@@ -18,7 +18,7 @@ api = tweepy.API(auth)
 
 def tweets_by_word_search(word):
     # Cursor(pagination)
-    result = tweepy.Cursor(api.search, q=word).items(50000) # adjust items accordingly
+    result = tweepy.Cursor(api.search, q=word).items(50) # adjust items accordingly
 
     tweet_id = []
     tweets = []
@@ -41,12 +41,11 @@ def tweets_by_word_search(word):
                     df.loc[i] = [tweet.id, tweet.text, tweet.created_at, tweet.favorite_count, tweet.retweet_count] # Append data to df
 
                     # Saving df at every iteration to ensure data is captured regardless of program breakdown
-                    df.to_csv(f'csv files/{word}.csv', index=False)
+                    df.to_csv(f'{word}.csv', index=False)
         except tweepy.TweepError as e:
             print(f"\nPlease wait...proceeding in a few minutes.\n({e})\n")
             time.sleep(15 * 60)
             continue
-            #break
 
 
 # calling the function
